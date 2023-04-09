@@ -127,6 +127,10 @@ p {
   }
 }
 
+.button {
+  width: 160px;
+}
+
 .btn-sedans:hover,
 .btn-suvs:hover,
 .btn-luxurys:hover {
