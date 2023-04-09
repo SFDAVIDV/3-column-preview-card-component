@@ -22,7 +22,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   width: 300px;
-  margin-top: 20px;
 }
 
 .sedans-cont,
@@ -61,12 +60,13 @@ p {
   font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   font-size: 15px;
+  line-height: 28px;
   color: var(--color-blanco-parrafos);
 }
 
 .button {
   width: 130px;
-  margin: 15px 0 40px 0;
+  margin: 55px 0 40px 0;
   height: auto;
   font-size: 15px;
   padding: 15px;
@@ -104,6 +104,10 @@ p {
 }
 
 @media screen and (min-width: 800px) {
+  body {
+    margin-top: 7%;
+  }
+
   .grid-cont {
     width: 700px;
     grid-template-columns: repeat(3, 1fr);
