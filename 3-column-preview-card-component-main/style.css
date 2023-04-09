@@ -128,6 +128,7 @@ p {
   background: inherit;
   color: var(--color-blanco);
   border: solid 2px var(--color-blanco);
+  margin-top: 11px;
 }
 
 @media screen and (min-width: 900px) {
