@@ -71,7 +71,7 @@ p {
   font-size: 15px;
   padding: 15px;
   border-radius: 25px;
-  border: none;
+  border: 2px solid var(--color-blanco);
 }
 
 .btn-sedans {
@@ -128,7 +128,7 @@ p {
   background: inherit;
   color: var(--color-blanco);
   border: solid 2px var(--color-blanco);
-  margin-top: 11px;
+  transition: all 0.3s ease-out;
 }
 
 @media screen and (min-width: 900px) {
