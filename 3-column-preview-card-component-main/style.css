@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-blanco: hsl(0, 0%, 95%);
+  --color-naranja: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --color-blanco-parrafos: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+  background: var(--color-blanco);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.grid-cont {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 300px;
+  margin-top: 20px;
+}
+
+.sedans-cont,
+.suvs-cont,
+.luxury-cont {
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+  background: var(--color-naranja);
+}
+
+.sedans-cont {
+  border-radius: 5px 5px 0 0;
+}
+
+.luxury-cont {
+  border-radius: 0 0 5px 5px;
+}
+
+.content-sedans,
+.content-suvs,
+.content-luxurus {
+  width: 200px;
+  margin: 25px 0 0 40px;
+}
+
+.title {
+  color: var(--color-blanco);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+p {
+  width: 235px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--color-blanco-parrafos);
+}
+
+.button {
+  width: 130px;
+  margin: 15px 0 40px 0;
+  height: auto;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-sedans {
+  color: var(--color-naranja);
+}
+
+.btn-suvs {
+  color: var(--Dark-cyan);
+}
+
+.btn-luxurys {
+  color: var(--Very-dark-cyan);
+}
+
+.suvs-cont {
+  background: var(--Dark-cyan);
+}
+
+.luxury-cont {
+  background: var(--Very-dark-cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 800px) {
+  .grid-cont {
+    width: 700px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sedans-cont {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .luxury-cont {
+    border-radius: 0 5px 5px 0;
+  }
+
+  p {
+    width: 200px;
+  }
+}
+
+.btn-sedans:hover,
+.btn-suvs:hover,
+.btn-luxurys:hover {
+  background: inherit;
+  color: var(--color-blanco);
+  border: solid 2px var(--color-blanco);
+}
+
+@media screen and (min-width: 900px) {
+  .grid-cont {
+    width: 800px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-cont {
+    width: 900px;
+  }
+}
